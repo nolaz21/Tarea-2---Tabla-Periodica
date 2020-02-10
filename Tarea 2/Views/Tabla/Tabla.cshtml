@@ -1,0 +1,367 @@
+﻿@{
+    ViewBag.Title = "Tarea 2";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Tabla</title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <h2>Tabla Periodica</h2>
+    <table>
+        <tr>
+            <!--Fila 1-->
+            @for (int s = 0; s < 18; s++)
+            {
+                string p = Convert.ToString(s);
+
+                if (@ViewData[p] == null)
+                {
+                    <td>@ViewData[p]</td>
+                }
+                else
+                {
+                    if (s < 1)
+                    {
+                        <td class="OtrosNoMetales">@ViewData[p]</td>
+                    }
+                    else if (s > 16)
+                    {
+                        <td class="GasesNobles">@ViewData[p]</td>
+                    }
+                    else
+                    {
+                        <td>@ViewData[p]</td>
+                    }
+
+
+                }
+            }
+        </tr>
+        <tr>
+            <!--Fila 2-->
+            @for (int s = 18; s < 36; s++)
+            {
+                string p = Convert.ToString(s);
+
+                if (@ViewData[p] == null)
+                {
+                    <td>@ViewData[p]</td>
+                }
+                else
+                {
+                    if (s == 18)
+                    {
+                        <td class="Alcalinos">@ViewData[p]</td>
+                    }
+                    else if (s == 19)
+                    {
+                        <td class="Alcalinoterreos">@ViewData[p]</td>
+                    }
+                    else if (s == 30)
+                    {
+                        <td class="Metaloides">@ViewData[p]</td>
+                    }
+                    else if (s > 30 && s < 34)
+                    {
+                        <td class="OtrosNoMetales">@ViewData[p]</td>
+                    }
+                    else if (s == 34)
+                    {
+                        <td class="Halogenos">@ViewData[p]</td>
+                    }
+                    else if (s == 35)
+                    {
+                        <td class="GasesNobles">@ViewData[p]</td>
+                    }
+
+
+                }
+            }
+        </tr>
+        <tr>
+            <!--Fila 3-->
+            @for (int s = 36; s < 54; s++)
+            {
+                string p = Convert.ToString(s);
+
+                if (@ViewData[p] == null)
+                {
+                    <td>@ViewData[p]</td>
+                }
+                else
+                {
+                    if (s == 36)
+                    {
+                        <td class="Alcalinos">@ViewData[p]</td>
+                    }
+                    else if (s == 37)
+                    {
+                        <td class="Alcalinoterreos">@ViewData[p]</td>
+                    }
+                    else if (s == 48)
+                    {
+                        <td class="OtrosMetales">@ViewData[p]</td>
+                    }
+                    else if (s == 49)
+                    {
+                        <td class="Metaloides">@ViewData[p]</td>
+                    }
+                    else if (s == 50 || s == 51)
+                    {
+                        <td class="OtrosNoMetales">@ViewData[p]</td>
+                    }
+                    else if (s == 52)
+                    {
+                        <td class="Halogenos">@ViewData[p]</td>
+                    }
+                    else if (s == 53)
+                    {
+                        <td class="GasesNobles">@ViewData[p]</td>
+                    }
+                }
+            }
+        </tr>
+        <tr>
+            <!--Fila 4-->
+            @for (int s = 54; s < 72; s++)
+            {
+                string p = Convert.ToString(s);
+
+                if (@ViewData[p] == null)
+                {
+                    <td>@ViewData[p]</td>
+                }
+                else
+                {
+                    if (s == 54)
+                    {
+                        <td class="Alcalinos">@ViewData[p]</td>
+                    }
+                    else if (s == 55)
+                    {
+                        <td class="Alcalinoterreos">@ViewData[p]</td>
+                    }
+                    else if (s > 55 && s < 66)
+                    {
+                        <td class="MetalesDeTransicion">@ViewData[p]</td>
+                    }
+                    else if (s == 66)
+                    {
+                        <td class="OtrosMetales">@ViewData[p]</td>
+                    }
+                    else if (s == 67 || s == 68)
+                    {
+                        <td class="Metaloides">@ViewData[p]</td>
+                    }
+                    else if (s == 69)
+                    {
+                        <td class="OtrosMetales">@ViewData[p]</td>
+                    }
+                    else if (s == 70)
+                    {
+                        <td class="Halogenos">@ViewData[p]</td>
+                    }
+                    else if (s == 71)
+                    {
+                        <td class="GasesNobles">@ViewData[p]</td>
+                    }
+
+
+                }
+            }
+        </tr>
+        <tr>
+            <!--Fila 5-->
+            @for (int s = 72; s < 90; s++)
+            {
+                string p = Convert.ToString(s);
+
+                if (@ViewData[p] == null)
+                {
+                    <td>@ViewData[p]</td>
+                }
+                else
+                {
+                    if (s == 72)
+                    {
+                        <td class="Alcalinos">@ViewData[p]</td>
+                    }
+                    else if (s == 73)
+                    {
+                        <td class="Alcalinoterreos">@ViewData[p]</td>
+                    }
+                    else if (s > 73 && s < 84)
+                    {
+                        <td class="MetalesDeTransicion">@ViewData[p]</td>
+                    }
+                    else if (s == 84 || s == 85)
+                    {
+                        <td class="OtrosMetales">@ViewData[p]</td>
+                    }
+                    else if (s == 86 || s == 87)
+                    {
+                        <td class="Metaloides">@ViewData[p]</td>
+                    }
+                    else if (s == 88)
+                    {
+                        <td class="Halogenos">@ViewData[p]</td>
+                    }
+                    else if (s == 89)
+                    {
+                        <td class="GasesNobles">@ViewData[p]</td>
+                    }
+                }
+            }
+
+        </tr>
+        <tr>
+            <!--Fila 6-->
+            @for (int s = 90; s < 108; s++)
+            {
+                string p = Convert.ToString(s);
+
+                if (@ViewData[p] == null)
+                {
+                    <td>@ViewData[p]</td>
+                }
+                else
+                {
+                    if (s == 90)
+                    {
+                        <td class="Alcalinos">@ViewData[p]</td>
+                    }
+                    else if (s == 91)
+                    {
+                        <td class="Alcalinoterreos">@ViewData[p]</td>
+                    }
+                    else if (s == 92)
+                    {
+                        <td class="Lantanidos">@ViewData[p]</td>
+                    }
+                    else if (s > 91 && s < 102)
+                    {
+                        <td class="MetalesDeTransicion">@ViewData[p]</td>
+                    }
+                    else if (s > 101 && s < 105)
+                    {
+                        <td class="OtrosMetales">@ViewData[p]</td>
+                    }
+                    else if (s == 105)
+                    {
+                        <td class="Metaloides">@ViewData[p]</td>
+                    }
+                    else if (s == 106)
+                    {
+                        <td class="Halogenos">@ViewData[p]</td>
+                    }
+                    else if (s == 107)
+                    {
+                        <td class="GasesNobles">@ViewData[p]</td>
+                    }
+
+                }
+            }
+        </tr>
+        <tr>
+            <!--Fila 7-->
+            @for (int s = 108; s < 126; s++)
+            {
+                string p = Convert.ToString(s);
+
+                if (@ViewData[p] == null)
+                {
+                    <td>@ViewData[p]</td>
+                }
+                else
+                {
+                    if (s == 108)
+                    {
+                        <td class="Alcalinos">@ViewData[p]</td>
+                    }
+                    else if (s == 109)
+                    {
+                        <td class="Alcalinoterreos">@ViewData[p]</td>
+                    }
+                    else if (s == 110)
+                    {
+                        <td class="Actinidos">@ViewData[p]</td>
+                    }
+                    else if (s > 110 && s < 120)
+                    {
+                        <td class="MetalesDeTransicion">@ViewData[p]</td>
+                    }
+                    else if (s > 119 && s < 124)
+                    {
+                        <td class="OtrosMetales">@ViewData[p]</td>
+                    }
+                    else if (s == 124)
+                    {
+                        <td class="Halogenos">@ViewData[p]</td>
+                    }
+                    else if (s == 125)
+                    {
+                        <td class="GasesNobles">@ViewData[p]</td>
+                    }
+
+                }
+            }
+
+        </tr>
+        <tr>
+            <!--Fila 8-->
+            @for (int s = 126; s < 144; s++)
+            {
+                string p = Convert.ToString(s);
+
+                <td>@ViewData[p]</td>
+            }
+
+        </tr>
+        <tr>
+            <!--Fila 9-->
+            @for (int s = 144; s < 162; s++)
+            {
+                string p = Convert.ToString(s);
+
+                if (@ViewData[p] == null)
+                {
+                    <td>@ViewData[p]</td>
+                }
+                else
+                {
+                    if (s > 146 && s < 162)
+                    {
+                        <td class="Lantanidos">@ViewData[p]</td>
+                    }
+                }
+            }
+
+        </tr>
+        <tr>
+            <!--Fila 10-->
+            @for (int s = 162; s < 180; s++)
+            {
+                string p = Convert.ToString(s);
+
+                if (@ViewData[p] == null)
+                {
+                    <td>@ViewData[p]</td>
+                }
+                else
+                {
+                    if (s > 164 && s < 180)
+                    {
+                        <td class="Actinidos">@ViewData[p]</td>
+                    }
+                }
+            }
+        </tr>
+    </table>
+</body>
+</html>

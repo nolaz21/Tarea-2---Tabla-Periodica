@@ -1,0 +1,50 @@
+﻿table {
+    background-color: darkgray;
+    border = 0px;
+}
+
+td
+{
+    padding: 7px 10px;
+    text-align: center;
+}
+
+.Alcalinos {
+    background-color: mediumpurple;
+}
+
+.Alcalinoterreos {
+    background-color: mediumorchid;
+}
+
+.MetalesDeTransicion {
+    background-color: darkorange;
+}
+
+.Lantanidos {
+    background-color: orangered;
+}
+
+.Actinidos {
+    background-color: rosybrown;
+}
+
+.OtrosMetales {
+    background-color: yellow;
+}
+
+.Metaloides {
+    background-color: greenyellow;
+}
+
+.OtrosNoMetales {
+    background-color: forestgreen;
+}
+
+.Halogenos {
+    background-color: cadetblue;
+}
+
+.GasesNobles {
+    background-color: cornflowerblue;
+}
